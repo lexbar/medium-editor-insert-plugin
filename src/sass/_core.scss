@@ -29,7 +29,7 @@
 
     .medium-insert-buttons {
         position: absolute;
-        color: #ddd;
+        color: rgba(0,0,0,0.35);
         font-size: 0.9em;
         a {
             text-decoration: underline;
@@ -43,7 +43,7 @@
             height: 32px;
             margin-top: -5px;
             border-radius: 20px;
-            border: 1px solid;
+            border: 1px solid rgba(0,0,0,0.6);
             font-size: 25px;
             line-height: 28px;
             text-align: center;
@@ -51,10 +51,15 @@
             background: #fff;
             transform: rotate(0);
             transition: transform 100ms;
+            
+            &:hover {
+                
+            }
 
             &.medium-insert-buttons-rotate {
                 transition: transform 250ms;
                 transform: rotate(45deg);
+                color: rgba(0,0,0,0.8);
             }
         }
 
@@ -73,14 +78,19 @@
                 a {
                     box-sizing: border-box;
                     display: inline-block;
-                    margin: 0 5px;
+                    margin: 0 0 0 5px;
                     width: 32px;
                     height: 32px;
                     border-radius: 20px;
-                    border: 1px solid;
+                    border: 1px solid rgba(0,0,0,0.6);
                     font-size: 20px;
                     line-height: 28px;
                     text-align: center;
+                    color: rgba(0,0,0,0.5);
+                    &:hover {
+                        border-color: rgba(0,0,0,0.8);
+                        color: rgba(0,0,0,0.6);
+                    }
                     .fa {
                         font-size: 15px;
                     }
